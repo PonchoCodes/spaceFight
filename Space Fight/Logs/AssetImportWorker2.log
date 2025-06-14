@@ -189,3 +189,127 @@ Unloading 6612 unused Assets / (6.2 MB). Loaded Objects now: 7293.
 Memory consumption went from 171.0 MB to 164.8 MB.
 Total: 8.830100 ms (FindLiveObjects: 0.887600 ms CreateObjectMapping: 0.290900 ms MarkObjects: 4.685500 ms  DeleteObjects: 2.958500 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 176410.034158 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(752496aa06bb12d46877e85342ebbbb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(752496aa06bb12d46877e85342ebbbb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a8178ef622fa902240e41aac8af80a44') in 0.1834549 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.228084 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(a4229feec01c12e4b851bb9cb6e191ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(a4229feec01c12e4b851bb9cb6e191ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '026e33dd811ed1d5b1c244ee482359fd') in 0.5325844 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.361554 seconds.
+  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies
+  artifactKey: Guid(680661c186dba284390fc4fa58e3860b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies using Guid(680661c186dba284390fc4fa58e3860b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b9d23d1a115a88766025ebb82c42f75d') in 0.000645 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.047923 seconds.
+  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlack1.png
+  artifactKey: Guid(1c08784c7b1352f488a869720cb9591d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlack1.png using Guid(1c08784c7b1352f488a869720cb9591d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2ae464acff21f7f0a55f30bfa4344f6b') in 0.0517191 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyGreen4.png
+  artifactKey: Guid(3bf20416743deeb41b3cafbc55456dac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyGreen4.png using Guid(3bf20416743deeb41b3cafbc55456dac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ee23595c892efe3d54192b62eedef932') in 0.162393 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyGreen1.png
+  artifactKey: Guid(bb54ef1d1d126a1428e108381e036c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyGreen1.png using Guid(bb54ef1d1d126a1428e108381e036c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dbcfbd60af8d93b0dce2b841d2791d8c') in 0.0142979 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyGreen3.png
+  artifactKey: Guid(bba9f97ab1def4e40afe699472c8d743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyGreen3.png using Guid(bba9f97ab1def4e40afe699472c8d743) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0cf352d4a834078a99e78a5b505cd7fb') in 0.0179886 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyRed1.png
+  artifactKey: Guid(6c9760a951a9fe842addf9698126d8ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyRed1.png using Guid(6c9760a951a9fe842addf9698126d8ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c7f2440cdae1e31105988d692ae0385b') in 0.0134953 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyRed3.png
+  artifactKey: Guid(f0a50bea7eb41be4b94601bc021ada99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyRed3.png using Guid(f0a50bea7eb41be4b94601bc021ada99) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a2225bd8932c20d03c34bdc45e2ca54d') in 0.0106859 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyGreen2.png
+  artifactKey: Guid(e6613b83ad21b384bb8da94815374eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyGreen2.png using Guid(e6613b83ad21b384bb8da94815374eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '25047aeadd2ff8a3f89c9264cdbd59bb') in 0.0149626 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlue3.png
+  artifactKey: Guid(12641eeb20b555842a3179bd3c778932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlue3.png using Guid(12641eeb20b555842a3179bd3c778932) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eae892070ad2a8a9c2248ebd1ef993a4') in 0.0102003 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlue5.png
+  artifactKey: Guid(d3e8382d110e27845a3e7c19acd6e8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlue5.png using Guid(d3e8382d110e27845a3e7c19acd6e8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9763cd1bdf5a80e3dc74cc5de0133fa5') in 0.0124452 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyRed2.png
+  artifactKey: Guid(73825e242114c144eac66b8ec8940eeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyRed2.png using Guid(73825e242114c144eac66b8ec8940eeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7fd92119edc1cec7dd9ee8dd374749be') in 0.0964204 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlue2.png
+  artifactKey: Guid(c9a62349a5d7cf346b5203c915de2100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlue2.png using Guid(c9a62349a5d7cf346b5203c915de2100) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5758a42be44c18e0ec49d5980acf10d0') in 0.0094058 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlue4.png
+  artifactKey: Guid(1998bcff1bb725e429febf43209e0cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlue4.png using Guid(1998bcff1bb725e429febf43209e0cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2126e1eba783e797b94195343e70a3db') in 0.0120546 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

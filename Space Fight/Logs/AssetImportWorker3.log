@@ -189,3 +189,71 @@ Unloading 6612 unused Assets / (6.0 MB). Loaded Objects now: 7293.
 Memory consumption went from 171.0 MB to 164.9 MB.
 Total: 8.788000 ms (FindLiveObjects: 0.764800 ms CreateObjectMapping: 0.337200 ms MarkObjects: 5.069400 ms  DeleteObjects: 2.614800 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 176428.584662 seconds.
+  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlack2.png
+  artifactKey: Guid(fcb82db50e010894c97c7bacd1732009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlack2.png using Guid(fcb82db50e010894c97c7bacd1732009) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f37de2670559310dd0513800bca1317f') in 0.4711212 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlack3.png
+  artifactKey: Guid(29faddd3547f4fd48ab2a3e5270f80d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlack3.png using Guid(29faddd3547f4fd48ab2a3e5270f80d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8456850d480f96fc5a55141bd9405643') in 0.0179255 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlack5.png
+  artifactKey: Guid(eabf55249bd83bd4387907c2d3c891a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlack5.png using Guid(eabf55249bd83bd4387907c2d3c891a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f2032e572cf97a9b5ba694895e6b4f05') in 0.0156597 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyGreen5.png
+  artifactKey: Guid(e5143b315421e274783d374054ec4548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyGreen5.png using Guid(e5143b315421e274783d374054ec4548) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eceeaf56e079e55d95a9fdee69947301') in 0.0138638 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlue1.png
+  artifactKey: Guid(c5b2fd5ee6d045644af78195df945649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlue1.png using Guid(c5b2fd5ee6d045644af78195df945649) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bc2d88be6f455a06f3ffe8eea44fc85a') in 0.0136256 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyRed4.png
+  artifactKey: Guid(8eaea474c60f7bd478a0a07c6ef7f73d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyRed4.png using Guid(8eaea474c60f7bd478a0a07c6ef7f73d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f2b10200205797ec6cf5e3abf533cd0e') in 0.0808692 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlack4.png
+  artifactKey: Guid(291feaea702ccb5438006f0fe4ebc38e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlack4.png using Guid(291feaea702ccb5438006f0fe4ebc38e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f31e1daf355c5e1055bf3dbba74c332e') in 0.0095223 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyRed5.png
+  artifactKey: Guid(3cb3cabb50f6f194eb9454ac406de968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyRed5.png using Guid(3cb3cabb50f6f194eb9454ac406de968) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8407c8245cf23e8b248eb55851fcbbe2') in 0.0121904 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
