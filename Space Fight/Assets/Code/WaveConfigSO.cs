@@ -8,6 +8,8 @@ public class WaveConfigSO : ScriptableObject
     [SerializeField] Transform pathPrefab;
     [SerializeField] float moveSpeed = 5f;
 
+
+    // ------------------------------- GETTERS ----------------------
     //Get the first path
     public Transform getStartingWaypoint()
     {
