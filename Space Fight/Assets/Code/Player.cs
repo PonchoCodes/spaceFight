@@ -12,6 +12,12 @@ public class Player : MonoBehaviour
     //Top right
     Vector2 maxBounds;
 
+    // Padding to account for player size
+    [SerializeField] float paddingLeft;
+    [SerializeField] float paddingRight;
+    [SerializeField] float paddingTop;
+    [SerializeField] float paddingBottom;
+
     void Update()
     {
     Move();
@@ -27,8 +33,8 @@ public class Player : MonoBehaviour
         Vector2 positionChange = rawInput * playerSpeed * Time.deltaTime;
         //Clamping position whilst simultaneously adding the position change
         Vector2 newPos = new Vector2();
-        newPos.x = Mathf.Clamp(transform.position.x + positionChange.x, minBounds.x, maxBounds.x);
-        newPos.y = Mathf.Clamp(transform.position.y + positionChange.y, minBounds.y, maxBounds.y);
+        newPos.x = Mathf.Clamp(transform.position.x + positionChange.x, minBounds.x + paddingLeft, maxBounds.x - paddingRight);
+        newPos.y = Mathf.Clamp(transform.position.y + positionChange.y, minBounds.y + paddingBottom, maxBounds.y - paddingTop);
         // set player position to the new position 
         transform.position = newPos;
     }
