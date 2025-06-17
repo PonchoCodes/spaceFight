@@ -8,6 +8,11 @@ public class EnemySpawner : MonoBehaviour
         SpawnEnemies();
     }
 
+    public WaveConfigSO GetCurrentWave()
+    {
+        return currentWave;
+    }
+
     void SpawnEnemies()
     {
         // Spawns enemy at the location of the starting waypoint, notably quaternion is how unity handles rotations, and to specify no rotation we use `Quaternion.identity`
