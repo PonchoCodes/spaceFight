@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8546253436012768850}
   - component: {fileID: 9196492905884227769}
+  - component: {fileID: -6607768798598532130}
   m_Layer: 0
   m_Name: EnemyRed1
   m_TagString: Untagged
@@ -87,3 +88,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-6607768798598532130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5759203065203319445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a53edeccf60a340ab2cdb38ddb1c7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
