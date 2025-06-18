@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
@@ -5,7 +6,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] WaveConfigSO currentWave;
     void Start()
     {
-        SpawnEnemies();
+        StartCoroutine(SpawnEnemies());
     }
 
     public WaveConfigSO GetCurrentWave()
@@ -13,13 +14,17 @@ public class EnemySpawner : MonoBehaviour
         return currentWave;
     }
 
-    void SpawnEnemies()
+    //Coroutine to spawn enemies
+    IEnumerator SpawnEnemies()
     {
         for (int i = 0; i < currentWave.GetEnemyCount(); i++)
         {
             // Spawns enemy at the location of the starting waypoint, notably quaternion is how unity handles rotations, and to specify no rotation we use `Quaternion.identity`
-            Instantiate(currentWave.GetEnemyPrefab(i), currentWave.GetStartingWaypoint().position, Quaternion.identity );
+            Instantiate(currentWave.GetEnemyPrefab(i), currentWave.GetStartingWaypoint().position, Quaternion.identity);
+            // Waits for time defined in wave config
+            yield return new WaitForSeconds(currentWave.GetRandomSpawnTime());
         }
-        
+
     }
+    
 }
