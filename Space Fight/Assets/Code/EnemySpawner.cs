@@ -15,7 +15,11 @@ public class EnemySpawner : MonoBehaviour
 
     void SpawnEnemies()
     {
-        // Spawns enemy at the location of the starting waypoint, notably quaternion is how unity handles rotations, and to specify no rotation we use `Quaternion.identity`
-        Instantiate(currentWave.GetEnemyPrefab(0), currentWave.GetStartingWaypoint().position, Quaternion.identity );
+        for (int i = 0; i < currentWave.GetEnemyCount(); i++)
+        {
+            // Spawns enemy at the location of the starting waypoint, notably quaternion is how unity handles rotations, and to specify no rotation we use `Quaternion.identity`
+            Instantiate(currentWave.GetEnemyPrefab(i), currentWave.GetStartingWaypoint().position, Quaternion.identity );
+        }
+        
     }
 }
