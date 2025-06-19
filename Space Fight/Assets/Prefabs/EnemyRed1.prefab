@@ -119,6 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  hitEffect: {fileID: 8351817552490558154, guid: 9ef11a17aee565c45b1b49a0d5c4a853, type: 3}
 --- !u!50 &6705862216351750597
 Rigidbody2D:
   serializedVersion: 5
@@ -208,6 +209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+  hitEffect: {fileID: 0}
 --- !u!114 &1013620316406804343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,4 +227,6 @@ MonoBehaviour:
   projectileLifeTime: 5
   firingRate: 2
   UseAI: 1
+  minimumFireRate: 0.1
+  fireRateVariance: 0.5
   isFiring: 0

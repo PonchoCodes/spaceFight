@@ -1,8 +1,10 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 public class Health : MonoBehaviour
 {
     [SerializeField] int health = 50;
+    [SerializeField] ParticleSystem hitEffect;
 
     //On collision
     void OnTriggerEnter2D(Collider2D otherCollider)
@@ -12,6 +14,7 @@ public class Health : MonoBehaviour
         if (damageDealer != null)
         {
             damageDealer.Hit();
+            playHitEffect();
             TakeDamage(damageDealer.GetDamage());
         }
     }
@@ -23,6 +26,16 @@ public class Health : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
+        }
+    }
+
+    void playHitEffect()
+    {
+        if (hitEffect != null)
+        {
+            ParticleSystem explosion = Instantiate(hitEffect, transform.position, quaternion.identity);
+            // Destroy after the duration of the particle effect + the lifetime of the partcile
+            Destroy(explosion.gameObject, explosion.main.duration + explosion.main.startLifetime.constantMax);
         }
     }
 }

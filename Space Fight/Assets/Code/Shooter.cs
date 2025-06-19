@@ -1,6 +1,4 @@
 using System.Collections;
-using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Shooter : MonoBehaviour
@@ -13,10 +11,12 @@ public class Shooter : MonoBehaviour
 
     [Header("AI")]
     [SerializeField] bool UseAI = false;
+    [SerializeField] float minimumFireRate = 0.1f;
+    [SerializeField] float fireRateVariance = 0.5f;
 
     Coroutine firingCoroutine;
 
-    public bool isFiring;
+    [HideInInspector] public bool isFiring;
 
     void Start()
     {
@@ -62,6 +62,8 @@ public class Shooter : MonoBehaviour
             }
             //Destroy after x seconds
             Destroy(projectile, projectileLifeTime);
+            // Set random firing rate if using AI
+            if (UseAI) { firingRate = Random.Range(firingRate - fireRateVariance, firingRate + fireRateVariance); firingRate = Mathf.Clamp(firingRate, minimumFireRate, float.MaxValue); }
             yield return new WaitForSeconds(firingRate);
         }     
     }
