@@ -1,7 +1,17 @@
+using NUnit.Framework.Internal;
 using UnityEngine;
 using UnityEngine.InputSystem;
 public class Player : MonoBehaviour
 {
+
+    Shooter shooter;
+
+    
+    private void Awake()
+    {
+        shooter = GetComponent<Shooter>();
+    }
+
     // Player Movement
     Vector2 rawInput;
     [SerializeField] float playerSpeed = 15f;
@@ -12,12 +22,14 @@ public class Player : MonoBehaviour
     //Top right
     Vector2 maxBounds;
 
+    //Header 
+    [Header("Camera Padding")]
     // Padding to account for player size
     [SerializeField] float paddingLeft;
     [SerializeField] float paddingRight;
     [SerializeField] float paddingTop;
     [SerializeField] float paddingBottom;
-
+    
     void Update()
     {
     Move();
@@ -43,6 +55,14 @@ public class Player : MonoBehaviour
     {
         // Get input direction through a vector 2 when movement key is pressed
         rawInput = value.Get<Vector2>();
+    }
+
+    private void OnFire(InputValue value)
+    {
+        if (shooter != null)
+        {
+            shooter.isFiring = value.isPressed;
+        }
     }
 
     private void InitializeBounds()
