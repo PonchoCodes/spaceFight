@@ -6,10 +6,13 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] List<WaveConfigSO> waveConfigs;
     [SerializeField] float timeBetweenWaves = 0f;
+    [SerializeField] bool isLooping = true;
     WaveConfigSO currentWave;
+
     void Start()
     {
         StartCoroutine(SpawnWaves());
+        
     }
 
 
@@ -17,18 +20,22 @@ public class EnemySpawner : MonoBehaviour
     IEnumerator SpawnWaves()
     {
 
-        foreach (WaveConfigSO wave in waveConfigs)
+        do
         {
-            currentWave = wave;
-            for (int i = 0; i < currentWave.GetEnemyCount(); i++)
+            foreach (WaveConfigSO wave in waveConfigs)
             {
-                // Spawns enemy at the location of the starting waypoint, notably quaternion is how unity handles rotations, and to specify no rotation we use `Quaternion.identity`
-                Instantiate(currentWave.GetEnemyPrefab(i), currentWave.GetStartingWaypoint().position, Quaternion.identity);
-                // Waits for time defined in wave config
-                yield return new WaitForSeconds(currentWave.GetRandomSpawnTime());
+                currentWave = wave;
+                for (int i = 0; i < currentWave.GetEnemyCount(); i++)
+                {
+                    // Spawns enemy at the location of the starting waypoint, notably quaternion is how unity handles rotations, and to specify no rotation we use `Quaternion.identity`
+                    Instantiate(currentWave.GetEnemyPrefab(i), currentWave.GetStartingWaypoint().position, Quaternion.identity);
+                    // Waits for time defined in wave config
+                    yield return new WaitForSeconds(currentWave.GetRandomSpawnTime());
+                }
+                yield return new WaitForSeconds(timeBetweenWaves);
             }
-            yield return new WaitForSeconds(timeBetweenWaves);
-        }
+        } while (isLooping == true);
+        
     }
 
     // Getters
