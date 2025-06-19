@@ -62,6 +62,7 @@ public class Player : MonoBehaviour
         if (shooter != null)
         {
             shooter.isFiring = value.isPressed;
+            Debug.Log(value.isPressed);
         }
     }
 
