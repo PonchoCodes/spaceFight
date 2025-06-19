@@ -11,8 +11,11 @@ GameObject:
   - component: {fileID: 8546253436012768850}
   - component: {fileID: 9196492905884227769}
   - component: {fileID: -6607768798598532130}
+  - component: {fileID: 5127386014382768693}
   - component: {fileID: 6705862216351750597}
   - component: {fileID: 6854579075602155516}
+  - component: {fileID: -8858949353946945904}
+  - component: {fileID: 7405278250513927534}
   m_Layer: 0
   m_Name: EnemyRed1
   m_TagString: Untagged
@@ -102,6 +105,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a53edeccf60a340ab2cdb38ddb1c7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5127386014382768693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5759203065203319445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8304c807d5f50344bd784b526270555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
 --- !u!50 &6705862216351750597
 Rigidbody2D:
   serializedVersion: 5
@@ -165,3 +181,29 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.515
+--- !u!114 &-8858949353946945904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5759203065203319445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b0f3c69422123e42b4d9ee4a1620706, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+--- !u!114 &7405278250513927534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5759203065203319445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8304c807d5f50344bd784b526270555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
