@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6854579075602155516}
   - component: {fileID: -8858949353946945904}
   - component: {fileID: 7405278250513927534}
+  - component: {fileID: 1013620316406804343}
   m_Layer: 6
   m_Name: EnemyRed1
   m_TagString: Untagged
@@ -207,3 +208,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+--- !u!114 &1013620316406804343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5759203065203319445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7cc3cd898fa2c42ba874e5e183e6fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 6657602531553468143, guid: 08df204bd4c022a47a7e48fbd5c5d293, type: 3}
+  projectileSpeed: 10
+  projectileLifeTime: 5
+  firingRate: 2
+  UseAI: 1
+  isFiring: 0

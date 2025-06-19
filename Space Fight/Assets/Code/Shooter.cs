@@ -1,5 +1,6 @@
 using System.Collections;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Shooter : MonoBehaviour
@@ -10,13 +11,19 @@ public class Shooter : MonoBehaviour
     [SerializeField] float projectileLifeTime = 5f;
     [SerializeField] float firingRate = 0.1f;
 
+    [Header("AI")]
+    [SerializeField] bool UseAI = false;
+
     Coroutine firingCoroutine;
 
     public bool isFiring;
 
     void Start()
     {
-
+        if (UseAI)
+        {
+            isFiring = true;
+        }
     }
 
     void Update()
@@ -43,7 +50,17 @@ public class Shooter : MonoBehaviour
             GameObject projectile = Instantiate(projectilePrefab, gameObject.transform.position, Quaternion.identity);
             //Get a rb reference to the projectile
             Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-            if(rb != null) { rb.linearVelocity = transform.up * projectileSpeed; }
+            //IF rb found
+            if (rb != null)
+            {
+                if (UseAI)
+                {
+                    rb.linearVelocity = transform.up * -projectileSpeed;
+                }
+                else {rb.linearVelocity = transform.up * projectileSpeed;}
+                
+            }
+            //Destroy after x seconds
             Destroy(projectile, projectileLifeTime);
             yield return new WaitForSeconds(firingRate);
         }     
