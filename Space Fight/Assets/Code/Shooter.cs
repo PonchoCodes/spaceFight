@@ -55,7 +55,7 @@ public class Shooter : MonoBehaviour
             //Create projectile
             GameObject projectile = Instantiate(projectilePrefab, gameObject.transform.position, Quaternion.identity);
             // Play shooting sound effect
-            audioPlayer.PlayShootingClip();
+            if (UseAI) { audioPlayer.PlayShootingClipEnemy();} else { audioPlayer.PlayShootingClipPlayer(); } 
             //Get a rb reference to the projectile
             Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
             //IF rb found
