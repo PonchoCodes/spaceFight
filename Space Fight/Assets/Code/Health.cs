@@ -3,9 +3,18 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    [Header("Health Properties")]
     [SerializeField] int health = 50;
-    [SerializeField] ParticleSystem hitEffect;
+    [SerializeField] bool applyCameraShakeOnDamageTaken;
 
+    [Header("Health Effects")]
+    [SerializeField] ParticleSystem hitEffect;
+    CameraShake cameraShake;
+
+    private void Awake()
+    {
+        cameraShake = Camera.main.GetComponent<CameraShake>();
+    }
     //On collision
     void OnTriggerEnter2D(Collider2D otherCollider)
     {
@@ -16,6 +25,7 @@ public class Health : MonoBehaviour
             damageDealer.Hit();
             playHitEffect();
             TakeDamage(damageDealer.GetDamage());
+            cameraShake.Play();
         }
     }
 
@@ -36,6 +46,14 @@ public class Health : MonoBehaviour
             ParticleSystem explosion = Instantiate(hitEffect, transform.position, quaternion.identity);
             // Destroy after the duration of the particle effect + the lifetime of the partcile
             Destroy(explosion.gameObject, explosion.main.duration + explosion.main.startLifetime.constantMax);
+        }
+    }
+    
+    void shakeCamera()
+    {
+        if (cameraShake != null && applyCameraShakeOnDamageTaken)
+        {
+            cameraShake.Play();
         }
     }
 }
