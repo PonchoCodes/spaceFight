@@ -2,6 +2,11 @@ using UnityEngine;
 
 public class AudioPlayer : MonoBehaviour
 {
+    [Header("Audio Settings")]
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] float pitchVariance = 0.05f;
+    [SerializeField] bool varyPitch = true;
+
     [Header("Shooting")]
     [SerializeField] AudioClip shootingClipPlayer;
     [SerializeField] AudioClip shootingClipEnemy;
@@ -9,21 +14,25 @@ public class AudioPlayer : MonoBehaviour
     [SerializeField][Range(0f, 1f)] float playerShootingVolume = 1f;
     [SerializeField][Range(0f, 1f)] float enemyShootingVolume = 1f;
 
+
     // Player Shooting
     public void PlayShootingClipPlayer()
     {
         if (shootingClipPlayer != null)
         {
-            AudioSource.PlayClipAtPoint(shootingClipPlayer, Camera.main.transform.position, playerShootingVolume);
+            audioSource.PlayOneShot(shootingClipPlayer, playerShootingVolume);
+            //Vary audio pitch  
+            if (varyPitch) {audioSource.pitch = Random.Range(1 - pitchVariance, 1 + pitchVariance); }
         }
     }
-
     //Enemy Shooting
     public void PlayShootingClipEnemy()
     {
         if (shootingClipEnemy != null)
         {
-            AudioSource.PlayClipAtPoint(shootingClipEnemy, Camera.main.transform.position, enemyShootingVolume);
+            audioSource.PlayOneShot(shootingClipEnemy, enemyShootingVolume);
+            //Vary audio pitch  
+            if (varyPitch) {audioSource.pitch = Random.Range(1 - pitchVariance, 1 + pitchVariance); }
         }
     }
 }
