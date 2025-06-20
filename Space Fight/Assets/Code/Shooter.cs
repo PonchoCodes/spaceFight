@@ -17,8 +17,14 @@ public class Shooter : MonoBehaviour
     Coroutine firingCoroutine;
 
     [HideInInspector] public bool isFiring;
+    AudioPlayer audioPlayer;
 
-    void Start()
+    void Awake()
+    {
+        audioPlayer = FindFirstObjectByType<AudioPlayer>();
+    }
+
+  void Start()
     {
         if (UseAI)
         {
@@ -48,6 +54,8 @@ public class Shooter : MonoBehaviour
         {
             //Create projectile
             GameObject projectile = Instantiate(projectilePrefab, gameObject.transform.position, Quaternion.identity);
+            // Play shooting sound effect
+            audioPlayer.PlayShootingClip();
             //Get a rb reference to the projectile
             Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
             //IF rb found
