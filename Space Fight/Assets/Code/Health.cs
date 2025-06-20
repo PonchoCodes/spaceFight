@@ -25,7 +25,7 @@ public class Health : MonoBehaviour
             damageDealer.Hit();
             playHitEffect();
             TakeDamage(damageDealer.GetDamage());
-            cameraShake.Play();
+            shakeCamera();
         }
     }
 

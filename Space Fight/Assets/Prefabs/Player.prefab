@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2343316996341898369}
   - component: {fileID: 7817236814052894430}
   - component: {fileID: 8322449503986386804}
+  - component: {fileID: 6483433749032537355}
   - component: {fileID: 6952276310764352112}
   - component: {fileID: -824992550194385417}
   m_Layer: 3
@@ -185,6 +186,26 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &6483433749032537355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3180054685508779261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f7cc3cd898fa2c42ba874e5e183e6fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 5760364635401132299, guid: a3e464649f80d60428927920ddb5cfa7, type: 3}
+  projectileSpeed: 10
+  projectileLifeTime: 5
+  firingRate: 0.25
+  UseAI: 0
+  minimumFireRate: 0.1
+  fireRateVariance: 0.5
+  isFiring: 0
 --- !u!114 &6952276310764352112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,4 +236,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 40
+  applyCameraShakeOnDamageTaken: 1
   hitEffect: {fileID: 8351817552490558154, guid: 9ef11a17aee565c45b1b49a0d5c4a853, type: 3}
