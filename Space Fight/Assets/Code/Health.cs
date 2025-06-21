@@ -66,7 +66,7 @@ public class Health : MonoBehaviour
             cameraShake.Play();
         }
     }
-    
+
     void playHitSFX()
     {
         if (audioPlayer != null)
@@ -74,5 +74,11 @@ public class Health : MonoBehaviour
             if (isPlayer) { audioPlayer.PlayDamageTakenPlayer(); }
             else { audioPlayer.PlayDamageTakenEnemy(); }
         }
+    }
+
+    // Getters
+    public float getHealth()
+    {
+        return health;
     }
 }
