@@ -20,6 +20,7 @@ public class ScoreKeeper : MonoBehaviour
     public void ModifyScore(int points)
     {
         score += points;
+        Mathf.Clamp(score, 0, float.MaxValue);
     }
 
     public void resetScore()
