@@ -1,5 +1,6 @@
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Health : MonoBehaviour
 {
@@ -10,15 +11,18 @@ public class Health : MonoBehaviour
 
     [Header("Health Effects")]
     [SerializeField] ParticleSystem hitEffect;
+    [SerializeField] int PointsToBeAddedOnDeath;
 
     //References to other scripts
     CameraShake cameraShake;
     AudioPlayer audioPlayer;
+    ScoreKeeper scoreKeeper;
 
     private void Awake()
     {
         cameraShake = Camera.main.GetComponent<CameraShake>();
-        audioPlayer = audioPlayer = FindFirstObjectByType<AudioPlayer>();
+        audioPlayer = FindFirstObjectByType<AudioPlayer>();
+        scoreKeeper = FindFirstObjectByType<ScoreKeeper>();
         //Is our gameobject a player?
         if (gameObject.GetComponent<Player>() != null) { isPlayer = true; }
     }
@@ -45,6 +49,7 @@ public class Health : MonoBehaviour
         //If health runs out
         if (health <= 0)
         {
+            if (isPlayer! && scoreKeeper != null) { scoreKeeper.ModifyScore(PointsToBeAddedOnDeath); }
             Destroy(gameObject);
         }
     }

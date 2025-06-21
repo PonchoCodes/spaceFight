@@ -119,7 +119,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  applyCameraShakeOnDamageTaken: 0
   hitEffect: {fileID: 8351817552490558154, guid: 9ef11a17aee565c45b1b49a0d5c4a853, type: 3}
+  PointsToBeAddedOnDeath: 0
 --- !u!50 &6705862216351750597
 Rigidbody2D:
   serializedVersion: 5
@@ -209,7 +211,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+  applyCameraShakeOnDamageTaken: 0
   hitEffect: {fileID: 0}
+  PointsToBeAddedOnDeath: 10
 --- !u!114 &1013620316406804343
 MonoBehaviour:
   m_ObjectHideFlags: 0
