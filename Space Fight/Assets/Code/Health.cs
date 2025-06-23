@@ -17,14 +17,17 @@ public class Health : MonoBehaviour
     CameraShake cameraShake;
     AudioPlayer audioPlayer;
     ScoreKeeper scoreKeeper;
+    UIDisplay uIDisplay;
 
     private void Awake()
     {
         cameraShake = Camera.main.GetComponent<CameraShake>();
         audioPlayer = FindFirstObjectByType<AudioPlayer>();
         scoreKeeper = FindFirstObjectByType<ScoreKeeper>();
+        uIDisplay = FindFirstObjectByType<UIDisplay>();
         //Is our gameobject a player?
         if (gameObject.GetComponent<Player>() != null) { isPlayer = true; }
+        UpdateHealthSlider();
     }
 
     //On collision
@@ -39,8 +42,15 @@ public class Health : MonoBehaviour
             TakeDamage(damageDealer.GetDamage());
             shakeCamera();
             playHitSFX();
+            UpdateHealthSlider();
 
         }
+    }
+    
+    private void UpdateHealthSlider()
+    {
+        // Update health slider
+        if (uIDisplay != null && isPlayer) { uIDisplay.UpdateHealthSlider(health); }
     }
 
     void TakeDamage(int damageTaken)
