@@ -59,7 +59,11 @@ public class Health : MonoBehaviour
         //If health runs out
         if (health <= 0)
         {
-            if (isPlayer! && scoreKeeper != null) { scoreKeeper.ModifyScore(PointsToBeAddedOnDeath); }
+            //If Enemy dies
+            if (!isPlayer && scoreKeeper != null)
+            {
+                scoreKeeper.ModifyScore(PointsToBeAddedOnDeath);
+            }
             Destroy(gameObject);
         }
     }

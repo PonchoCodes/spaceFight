@@ -6,12 +6,12 @@ public class UIDisplay : MonoBehaviour
 {
     [Header("Health Properties")]
     [SerializeField] Slider healthSlider;
-    [SerializeField] TextMeshPro scoreText;
+    [SerializeField] TMP_Text scoreText;
 
     void Awake()
     {
         healthSlider = gameObject.GetComponentInChildren<Slider>();
-        scoreText = gameObject.GetComponentInChildren<TextMeshPro>();
+        scoreText = gameObject.GetComponentInChildren<TMP_Text>();
     }
 
     public void UpdateHealthSlider(int currentHealth)
@@ -20,7 +20,6 @@ public class UIDisplay : MonoBehaviour
         {
             float sliderHealth = (float)currentHealth / 100;
             healthSlider.value = sliderHealth;
-            Debug.Log(healthSlider.value);
         }
     }
     

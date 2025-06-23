@@ -1,26 +1,29 @@
 using System.Reflection;
+using System.Xml.Serialization;
 using UnityEngine;
 
 public class ScoreKeeper : MonoBehaviour
 {
-    private int score;
+    private int score = 0;
+    //References
+    UIDisplay uIDisplay;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Awake()
     {
-
+        uIDisplay = FindFirstObjectByType<UIDisplay>();
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    private void Start()
     {
-
+          uIDisplay.UpdateScore(score);
     }
 
     public void ModifyScore(int points)
     {
         score += points;
+        Debug.Log("Score in ScoreKeeper:" + score);
         Mathf.Clamp(score, 0, float.MaxValue);
+        uIDisplay.UpdateScore(score);
     }
 
     public void resetScore()
