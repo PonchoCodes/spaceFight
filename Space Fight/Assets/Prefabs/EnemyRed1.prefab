@@ -122,7 +122,6 @@ MonoBehaviour:
   applyCameraShakeOnDamageTaken: 0
   hitEffect: {fileID: 8351817552490558154, guid: 9ef11a17aee565c45b1b49a0d5c4a853, type: 3}
   PointsToBeAddedOnDeath: 20
-  scoreKeeper: {fileID: 0}
 --- !u!50 &6705862216351750597
 Rigidbody2D:
   serializedVersion: 5
@@ -215,7 +214,6 @@ MonoBehaviour:
   applyCameraShakeOnDamageTaken: 0
   hitEffect: {fileID: 0}
   PointsToBeAddedOnDeath: 10
-  scoreKeeper: {fileID: 0}
 --- !u!114 &1013620316406804343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,8 +229,8 @@ MonoBehaviour:
   projectilePrefab: {fileID: 6657602531553468143, guid: 08df204bd4c022a47a7e48fbd5c5d293, type: 3}
   projectileSpeed: 10
   projectileLifeTime: 5
-  firingRate: 2
+  firingRate: 1
   UseAI: 1
   minimumFireRate: 0.1
-  fireRateVariance: 0.5
+  fireRateVariance: 0.2
   isFiring: 0
