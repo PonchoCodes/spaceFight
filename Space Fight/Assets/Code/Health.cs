@@ -40,7 +40,8 @@ public class Health : MonoBehaviour
 
     void Start()
     {
-        UpdateHealthSlider();    
+        UpdateHealthSlider();
+        Debug.Log(scoreKeeper); 
     }
   //On collision
   void OnTriggerEnter2D(Collider2D otherCollider)
