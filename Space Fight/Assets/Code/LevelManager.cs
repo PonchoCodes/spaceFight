@@ -1,9 +1,16 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
 public class LevelManager : MonoBehaviour
 {
+    //Refrences
+    ScoreKeeper scoreKeeper;
+    void Awake()
+    {
+        scoreKeeper = FindAnyObjectByType<ScoreKeeper>();   
+    }
 
-    public void LoadMainMenu()
+  public void LoadMainMenu()
     {
         //Loads Game Scene
         SceneManager.LoadScene(0);
@@ -15,6 +22,7 @@ public class LevelManager : MonoBehaviour
         //Loads Game Scene
         SceneManager.LoadScene(1);
         Time.timeScale = 1;
+        scoreKeeper.resetScore();
     }
 
     public void LoadLeaderboard()
