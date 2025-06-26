@@ -2,7 +2,7 @@ Using pre-set license
 Built from '6000.1/staging' branch; Version is '6000.1.6f1 (d64b1a599cad) revision 14043930'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'en' Physical Memory: 24519 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
-Date: 2025-06-12T23:46:36Z
+Date: 2025-06-24T15:46:45Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.1.6f1\Editor\Unity.exe
@@ -16,7 +16,7 @@ C:/Users/PC/Documents/GitHub/spaceFight/Space Fight
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-59628
+50959
 -job-worker-count
 7
 -background-job-worker-count
@@ -62,12 +62,12 @@ C:/Users/PC/Documents/GitHub/spaceFight/Space Fight
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [33620]  Target information:
+Player connection [35856]  Target information:
 
-Player connection [33620]  * "[IP] 172.16.0.2 [Port] 0 [Flags] 2 [Guid] 1728875493 [EditorId] 1728875493 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-A0O4QL4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [35856]  * "[IP] 172.16.0.2 [Port] 0 [Flags] 2 [Guid] 3462539563 [EditorId] 3462539563 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-A0O4QL4) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [33620] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [33620] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [35856] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [35856] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -79,7 +79,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 3.98 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 9.56 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.1.6f1 (d64b1a599cad)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.1.6f1/Editor/Data/Resources/UnitySubsystems
@@ -96,45 +96,45 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.1.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.1.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.1.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56060
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56316
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.1.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.1.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002675 seconds.
-- Loaded All Assemblies, in  0.357 seconds
+Registered in 0.002975 seconds.
+- Loaded All Assemblies, in  0.418 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.283 seconds
-Domain Reload Profiling: 636ms
-	BeginReloadAssembly (127ms)
+- Finished resetting the current domain, in  0.340 seconds
+Domain Reload Profiling: 754ms
+	BeginReloadAssembly (152ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (46ms)
-	LoadAllAssembliesAndSetupDomain (136ms)
-		LoadAssemblies (123ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (50ms)
+	LoadAllAssembliesAndSetupDomain (165ms)
+		LoadAssemblies (147ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (133ms)
-			TypeCache.Refresh (132ms)
-				TypeCache.ScanAssembly (120ms)
+		AnalyzeDomain (162ms)
+			TypeCache.Refresh (160ms)
+				TypeCache.ScanAssembly (143ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (283ms)
+	FinalizeReload (340ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (240ms)
+		SetupLoadedEditorAssemblies (291ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (45ms)
+			InitializePlatformSupportModulesInManaged (51ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (47ms)
-			ProcessInitializeOnLoadAttributes (98ms)
-			ProcessInitializeOnLoadMethodAttributes (46ms)
+			BeforeProcessingInitializeOnLoad (56ms)
+			ProcessInitializeOnLoadAttributes (123ms)
+			ProcessInitializeOnLoadMethodAttributes (58ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -143,171 +143,51 @@ Domain Reload Profiling: 636ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.767 seconds
-Refreshing native plugins compatible for Editor in 2.36 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.780 seconds
+Refreshing native plugins compatible for Editor in 2.17 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.715 seconds
-Domain Reload Profiling: 1475ms
-	BeginReloadAssembly (156ms)
+- Finished resetting the current domain, in  1.003 seconds
+Domain Reload Profiling: 1776ms
+	BeginReloadAssembly (176ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (29ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (525ms)
-		LoadAssemblies (359ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (513ms)
+		LoadAssemblies (378ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (254ms)
-			TypeCache.Refresh (184ms)
-				TypeCache.ScanAssembly (167ms)
-			BuildScriptInfoCaches (58ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (715ms)
+		AnalyzeDomain (228ms)
+			TypeCache.Refresh (164ms)
+				TypeCache.ScanAssembly (149ms)
+			BuildScriptInfoCaches (52ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1003ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (584ms)
+		SetupLoadedEditorAssemblies (863ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (4ms)
 			BeforeProcessingInitializeOnLoad (126ms)
-			ProcessInitializeOnLoadAttributes (335ms)
-			ProcessInitializeOnLoadMethodAttributes (108ms)
-			AfterProcessingInitializeOnLoad (9ms)
+			ProcessInitializeOnLoadAttributes (611ms)
+			ProcessInitializeOnLoadMethodAttributes (112ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (7ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 2.33 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 2.51 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 217 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6612 unused Assets / (6.2 MB). Loaded Objects now: 7293.
-Memory consumption went from 171.0 MB to 164.8 MB.
-Total: 8.830100 ms (FindLiveObjects: 0.887600 ms CreateObjectMapping: 0.290900 ms MarkObjects: 4.685500 ms  DeleteObjects: 2.958500 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 176410.034158 seconds.
-  path: Assets/Prefabs
-  artifactKey: Guid(752496aa06bb12d46877e85342ebbbb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs using Guid(752496aa06bb12d46877e85342ebbbb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a8178ef622fa902240e41aac8af80a44') in 0.1834549 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.228084 seconds.
-  path: Assets/Prefabs/Player.prefab
-  artifactKey: Guid(a4229feec01c12e4b851bb9cb6e191ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player.prefab using Guid(a4229feec01c12e4b851bb9cb6e191ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '026e33dd811ed1d5b1c244ee482359fd') in 0.5325844 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 7
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.361554 seconds.
-  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies
-  artifactKey: Guid(680661c186dba284390fc4fa58e3860b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies using Guid(680661c186dba284390fc4fa58e3860b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b9d23d1a115a88766025ebb82c42f75d') in 0.000645 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.047923 seconds.
-  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlack1.png
-  artifactKey: Guid(1c08784c7b1352f488a869720cb9591d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlack1.png using Guid(1c08784c7b1352f488a869720cb9591d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2ae464acff21f7f0a55f30bfa4344f6b') in 0.0517191 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyGreen4.png
-  artifactKey: Guid(3bf20416743deeb41b3cafbc55456dac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyGreen4.png using Guid(3bf20416743deeb41b3cafbc55456dac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ee23595c892efe3d54192b62eedef932') in 0.162393 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyGreen1.png
-  artifactKey: Guid(bb54ef1d1d126a1428e108381e036c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyGreen1.png using Guid(bb54ef1d1d126a1428e108381e036c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dbcfbd60af8d93b0dce2b841d2791d8c') in 0.0142979 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyGreen3.png
-  artifactKey: Guid(bba9f97ab1def4e40afe699472c8d743) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyGreen3.png using Guid(bba9f97ab1def4e40afe699472c8d743) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0cf352d4a834078a99e78a5b505cd7fb') in 0.0179886 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyRed1.png
-  artifactKey: Guid(6c9760a951a9fe842addf9698126d8ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyRed1.png using Guid(6c9760a951a9fe842addf9698126d8ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c7f2440cdae1e31105988d692ae0385b') in 0.0134953 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyRed3.png
-  artifactKey: Guid(f0a50bea7eb41be4b94601bc021ada99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyRed3.png using Guid(f0a50bea7eb41be4b94601bc021ada99) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a2225bd8932c20d03c34bdc45e2ca54d') in 0.0106859 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyGreen2.png
-  artifactKey: Guid(e6613b83ad21b384bb8da94815374eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyGreen2.png using Guid(e6613b83ad21b384bb8da94815374eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '25047aeadd2ff8a3f89c9264cdbd59bb') in 0.0149626 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlue3.png
-  artifactKey: Guid(12641eeb20b555842a3179bd3c778932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlue3.png using Guid(12641eeb20b555842a3179bd3c778932) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eae892070ad2a8a9c2248ebd1ef993a4') in 0.0102003 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlue5.png
-  artifactKey: Guid(d3e8382d110e27845a3e7c19acd6e8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlue5.png using Guid(d3e8382d110e27845a3e7c19acd6e8a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9763cd1bdf5a80e3dc74cc5de0133fa5') in 0.0124452 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyRed2.png
-  artifactKey: Guid(73825e242114c144eac66b8ec8940eeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyRed2.png using Guid(73825e242114c144eac66b8ec8940eeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7fd92119edc1cec7dd9ee8dd374749be') in 0.0964204 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlue2.png
-  artifactKey: Guid(c9a62349a5d7cf346b5203c915de2100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlue2.png using Guid(c9a62349a5d7cf346b5203c915de2100) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5758a42be44c18e0ec49d5980acf10d0') in 0.0094058 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlue4.png
-  artifactKey: Guid(1998bcff1bb725e429febf43209e0cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/kenney_space-shooter-redux/PNG/Enemies/enemyBlue4.png using Guid(1998bcff1bb725e429febf43209e0cc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2126e1eba783e797b94195343e70a3db') in 0.0120546 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+Unloading 237 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6648 unused Assets / (6.8 MB). Loaded Objects now: 7351.
+Memory consumption went from 179.2 MB to 172.4 MB.
+Total: 9.735700 ms (FindLiveObjects: 0.727800 ms CreateObjectMapping: 0.895300 ms MarkObjects: 4.808700 ms  DeleteObjects: 3.302100 ms)
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
