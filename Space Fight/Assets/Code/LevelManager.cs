@@ -7,6 +7,7 @@ public class LevelManager : MonoBehaviour
     {
         //Loads Game Scene
         SceneManager.LoadScene(0);
+        Time.timeScale = 1;
     }
 
     public void LoadGame()
@@ -20,6 +21,7 @@ public class LevelManager : MonoBehaviour
     {
         //Loads leaderboard scene
         SceneManager.LoadScene(2);
+        Time.timeScale = 1;
     }
 
     public void QuitGame()
