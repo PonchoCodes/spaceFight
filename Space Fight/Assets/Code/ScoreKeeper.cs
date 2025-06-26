@@ -21,7 +21,6 @@ public class ScoreKeeper : MonoBehaviour
     public void ModifyScore(int points)
     {
         score += points;
-        Debug.Log("Score in ScoreKeeper:" + score);
         Mathf.Clamp(score, 0, float.MaxValue);
         uIDisplay.UpdateScore(score);
     }

@@ -50,10 +50,8 @@ public class Shooter : MonoBehaviour
 
     IEnumerator FireContinously()
     {
-        Debug.Log("Shater is called");
         while (true)
         {
-            Debug.Log("Shatering!");
             //Create projectile
             GameObject projectile = Instantiate(projectilePrefab, gameObject.transform.position, Quaternion.identity);
             // Play shooting sound effect

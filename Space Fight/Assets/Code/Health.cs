@@ -1,5 +1,8 @@
+using System.Collections;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.SocialPlatforms.Impl;
 
 public class Health : MonoBehaviour
@@ -18,6 +21,8 @@ public class Health : MonoBehaviour
     AudioPlayer audioPlayer;
     ScoreKeeper scoreKeeper;
     UIDisplay uIDisplay;
+    Animator animator;
+    Volume volume;
 
     private void Awake()
     {
@@ -25,6 +30,8 @@ public class Health : MonoBehaviour
         audioPlayer = FindFirstObjectByType<AudioPlayer>();
         scoreKeeper = FindFirstObjectByType<ScoreKeeper>();
         uIDisplay = FindFirstObjectByType<UIDisplay>();
+        animator = gameObject.GetComponent<Animator>();
+        volume = FindFirstObjectByType<Volume>();
         //Is our gameobject a player?
         if (gameObject.GetComponent<Player>() != null) { isPlayer = true; }
         UpdateHealthSlider();
@@ -76,6 +83,39 @@ public class Health : MonoBehaviour
             // Destroy after the duration of the particle effect + the lifetime of the partcile
             Destroy(explosion.gameObject, explosion.main.duration + explosion.main.startLifetime.constantMax);
         }
+        if (animator != null && isPlayer)
+        {
+            animator.SetTrigger("gotHit");
+        }
+        if (volume != null && isPlayer)
+        {
+            StartCoroutine(ChromEffect());   
+        }
+    }
+
+    IEnumerator ChromEffect()
+    {
+        volume.profile.TryGet(out ChromaticAberration chromAb);
+
+        // Increase intensity
+        while (chromAb.intensity.value < 1f)
+        {
+            chromAb.intensity.value += 0.5f * Time.deltaTime * 10;
+            yield return new WaitForEndOfFrame();
+        }
+
+        chromAb.intensity.value = 1f;
+
+        yield return new WaitForSeconds(0.5f);
+
+        while (chromAb.intensity.value > 0f)
+        {
+            chromAb.intensity.value -= 0.5f * Time.deltaTime * 10;
+            yield return new WaitForEndOfFrame();
+        }
+
+        // Ensure it ends exactly at 0
+        chromAb.intensity.value = 0f;
     }
 
     void shakeCamera()
