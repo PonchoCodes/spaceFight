@@ -23,6 +23,7 @@ public class Health : MonoBehaviour
     UIDisplay uIDisplay;
     Animator animator;
     Volume volume;
+    LoadDeathUI loadDeathUI;
 
     private void Awake()
     {
@@ -32,13 +33,17 @@ public class Health : MonoBehaviour
         uIDisplay = FindFirstObjectByType<UIDisplay>();
         animator = gameObject.GetComponent<Animator>();
         volume = FindFirstObjectByType<Volume>();
+        loadDeathUI = FindAnyObjectByType<LoadDeathUI>(FindObjectsInactive.Include);
         //Is our gameobject a player?
         if (gameObject.GetComponent<Player>() != null) { isPlayer = true; }
-        UpdateHealthSlider();
     }
 
-    //On collision
-    void OnTriggerEnter2D(Collider2D otherCollider)
+    void Start()
+    {
+        UpdateHealthSlider();    
+    }
+  //On collision
+  void OnTriggerEnter2D(Collider2D otherCollider)
     {
         // Check if other collider has a damage dealer script and define it
         DamageDealer damageDealer = otherCollider.GetComponent<DamageDealer>();
@@ -71,6 +76,9 @@ public class Health : MonoBehaviour
             {
                 scoreKeeper.ModifyScore(PointsToBeAddedOnDeath);
             }
+            
+            //Load death UI
+            if (loadDeathUI != null && isPlayer) { loadDeathUI.LoadTheDeathUI(); }
             Destroy(gameObject);
         }
     }
