@@ -13,6 +13,7 @@ public class LevelManager : MonoBehaviour
     {
         //Loads Game Scene
         SceneManager.LoadScene(1);
+        Time.timeScale = 1;
     }
 
     public void LoadLeaderboard()
@@ -26,4 +27,5 @@ public class LevelManager : MonoBehaviour
         Debug.Log("Game Quit");
         Application.Quit();
     }
+
 }
