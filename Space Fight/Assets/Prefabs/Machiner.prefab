@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 7929556988310301373}
   - component: {fileID: 8714561727568009468}
   - component: {fileID: 417074496118770509}
-  - component: {fileID: 1747147216974317280}
   - component: {fileID: 6838947820571867389}
   m_Layer: 6
   m_Name: Machiner
@@ -118,10 +117,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8304c807d5f50344bd784b526270555, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 10
   applyCameraShakeOnDamageTaken: 0
   hitEffect: {fileID: 8351817552490558154, guid: 9ef11a17aee565c45b1b49a0d5c4a853, type: 3}
-  PointsToBeAddedOnDeath: 20
+  PointsToBeAddedOnDeath: 40
 --- !u!50 &7929556988310301373
 Rigidbody2D:
   serializedVersion: 5
@@ -198,22 +197,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
---- !u!114 &1747147216974317280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8650007358879390890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8304c807d5f50344bd784b526270555, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 10
-  applyCameraShakeOnDamageTaken: 0
-  hitEffect: {fileID: 0}
-  PointsToBeAddedOnDeath: 10
 --- !u!114 &6838947820571867389
 MonoBehaviour:
   m_ObjectHideFlags: 0

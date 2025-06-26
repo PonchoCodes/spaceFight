@@ -24,7 +24,7 @@ public class Shooter : MonoBehaviour
         audioPlayer = FindFirstObjectByType<AudioPlayer>();
     }
 
-  void Start()
+    void Start()
     {
         if (UseAI)
         {
@@ -50,12 +50,14 @@ public class Shooter : MonoBehaviour
 
     IEnumerator FireContinously()
     {
+        Debug.Log("Shater is called");
         while (true)
         {
+            Debug.Log("Shatering!");
             //Create projectile
             GameObject projectile = Instantiate(projectilePrefab, gameObject.transform.position, Quaternion.identity);
             // Play shooting sound effect
-            if (UseAI && audioPlayer != null) { audioPlayer.PlayShootingClipEnemy();} else if (audioPlayer != null) { audioPlayer.PlayShootingClipPlayer(); } 
+            if (UseAI && audioPlayer != null) { audioPlayer.PlayShootingClipEnemy(); } else if (audioPlayer != null) { audioPlayer.PlayShootingClipPlayer(); }
             //Get a rb reference to the projectile
             Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
             //IF rb found
@@ -65,14 +67,21 @@ public class Shooter : MonoBehaviour
                 {
                     rb.linearVelocity = transform.up * -projectileSpeed;
                 }
-                else {rb.linearVelocity = transform.up * projectileSpeed;}
-                
+                else { rb.linearVelocity = transform.up * projectileSpeed; }
+
             }
+
+            DamageDealer damageDealer = projectile.GetComponent<DamageDealer>();
+            if (damageDealer.GetExplodesIntoMoreBullets())
+            {
+                damageDealer.startBulletShatter();
+            }
+
             //Destroy after x seconds
             Destroy(projectile, projectileLifeTime);
             // Set random firing rate if using AI
             if (UseAI) { firingRate = Random.Range(firingRate - fireRateVariance, firingRate + fireRateVariance); firingRate = Mathf.Clamp(firingRate, minimumFireRate, float.MaxValue); }
             yield return new WaitForSeconds(firingRate);
-        }     
+        }
     }
 }

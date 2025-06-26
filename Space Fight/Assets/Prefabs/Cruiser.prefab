@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 8584957273557933825}
   - component: {fileID: 3797558823874330188}
   - component: {fileID: 3372951355215190060}
-  - component: {fileID: 2720487183771752900}
   - component: {fileID: 6567414874641518904}
   m_Layer: 6
   m_Name: Cruiser
@@ -121,7 +120,7 @@ MonoBehaviour:
   health: 20
   applyCameraShakeOnDamageTaken: 0
   hitEffect: {fileID: 8351817552490558154, guid: 9ef11a17aee565c45b1b49a0d5c4a853, type: 3}
-  PointsToBeAddedOnDeath: 80
+  PointsToBeAddedOnDeath: 50
 --- !u!50 &8584957273557933825
 Rigidbody2D:
   serializedVersion: 5
@@ -198,22 +197,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
---- !u!114 &2720487183771752900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1180159084234125233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8304c807d5f50344bd784b526270555, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 10
-  applyCameraShakeOnDamageTaken: 0
-  hitEffect: {fileID: 0}
-  PointsToBeAddedOnDeath: 10
 --- !u!114 &6567414874641518904
 MonoBehaviour:
   m_ObjectHideFlags: 0
