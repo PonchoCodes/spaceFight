@@ -51,7 +51,7 @@ public class Pathfinder : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            if (!loopRoute) { Destroy(gameObject); } else { waypointIndex = 1; FollowPath(); }
         }
     }
 }

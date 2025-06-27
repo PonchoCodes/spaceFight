@@ -891,10 +891,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fccf531ac8ec8cc40909afb7db650289, type: 2}
   - {fileID: 11400000, guid: 62476c2954e0bd342b382a9820d78cac, type: 2}
   - {fileID: 11400000, guid: b905b8352b13cff4cbeb0af858443189, type: 2}
+  - {fileID: 11400000, guid: fccf531ac8ec8cc40909afb7db650289, type: 2}
   - {fileID: 11400000, guid: daf71f3ab9c38934caa410304917b346, type: 2}
   - {fileID: 11400000, guid: e5076204e55b9f045a0b399037117d20, type: 2}
   - {fileID: 11400000, guid: 22d81231735229845b04785d7bdfbc36, type: 2}
-  - {fileID: 11400000, guid: 4dd9ac7532819674cbd53aec68bd9783, type: 2}
   - {fileID: 11400000, guid: 552e1409512ac3f49b90385458c59db9, type: 2}
   - {fileID: 11400000, guid: 980608a8f5d0cfb4396099ccb49a7f31, type: 2}
   - {fileID: 11400000, guid: cfc8b9c1cb7cf0442a877ee0bfa80392, type: 2}
@@ -906,7 +906,33 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 59577bc884957f8448bdbd73f452c4ff, type: 2}
   - {fileID: 11400000, guid: b905b8352b13cff4cbeb0af858443189, type: 2}
   - {fileID: 11400000, guid: f6904ded20026a140b9b2a05b3180b18, type: 2}
-  - {fileID: 11400000, guid: fccf531ac8ec8cc40909afb7db650289, type: 2}
+  - {fileID: 11400000, guid: 5334f98189a181a4d84031b41fb344af, type: 2}
+  - {fileID: 11400000, guid: 60b46062b6c1b01428921fa2c76c924a, type: 2}
+  - {fileID: 11400000, guid: d5949937415b86346aa04c0efd5ed630, type: 2}
+  - {fileID: 11400000, guid: 6f78f5c273225b14c98daa649fd68876, type: 2}
+  - {fileID: 11400000, guid: d5949937415b86346aa04c0efd5ed630, type: 2}
+  - {fileID: 11400000, guid: c63cd9b073428544d834d8add906b080, type: 2}
+  - {fileID: 11400000, guid: dbd3c9b1f0af8334f8ded7ab17e83d71, type: 2}
+  - {fileID: 11400000, guid: dbd3c9b1f0af8334f8ded7ab17e83d71, type: 2}
+  - {fileID: 11400000, guid: dbd3c9b1f0af8334f8ded7ab17e83d71, type: 2}
+  - {fileID: 11400000, guid: 980608a8f5d0cfb4396099ccb49a7f31, type: 2}
+  - {fileID: 11400000, guid: 16dae25fffdbb4e4bb3365be4183e583, type: 2}
+  - {fileID: 11400000, guid: a6eef0169c69e5b44a8b53c391e7c477, type: 2}
+  - {fileID: 11400000, guid: 6f78f5c273225b14c98daa649fd68876, type: 2}
+  - {fileID: 11400000, guid: 6d0563325f1a62648ac7dc6bdbb06bda, type: 2}
+  - {fileID: 11400000, guid: dbd3c9b1f0af8334f8ded7ab17e83d71, type: 2}
+  - {fileID: 11400000, guid: d5949937415b86346aa04c0efd5ed630, type: 2}
+  - {fileID: 11400000, guid: 7e2de36ab48b85b4f94d5da76a4b4327, type: 2}
+  - {fileID: 11400000, guid: 6f78f5c273225b14c98daa649fd68876, type: 2}
+  - {fileID: 11400000, guid: c63cd9b073428544d834d8add906b080, type: 2}
+  - {fileID: 11400000, guid: 5334f98189a181a4d84031b41fb344af, type: 2}
+  - {fileID: 11400000, guid: 980608a8f5d0cfb4396099ccb49a7f31, type: 2}
+  - {fileID: 11400000, guid: 16dae25fffdbb4e4bb3365be4183e583, type: 2}
+  - {fileID: 11400000, guid: dbd3c9b1f0af8334f8ded7ab17e83d71, type: 2}
+  - {fileID: 11400000, guid: d5949937415b86346aa04c0efd5ed630, type: 2}
+  - {fileID: 11400000, guid: 6f78f5c273225b14c98daa649fd68876, type: 2}
+  - {fileID: 11400000, guid: a6eef0169c69e5b44a8b53c391e7c477, type: 2}
+  - {fileID: 11400000, guid: 980608a8f5d0cfb4396099ccb49a7f31, type: 2}
   timeBetweenWaves: 0
   isLooping: 1
 --- !u!4 &1012462450
@@ -2153,6 +2179,22 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 519420034}
+    - target: {fileID: 2808692559947721668, guid: 66ac97fbf3565e346a3717d82a086689, type: 3}
+      propertyPath: damageClipBigEnemy
+      value: 
+      objectReference: {fileID: 8300000, guid: 942f6d57cee7fa341a926bc261954b8e, type: 3}
+    - target: {fileID: 2808692559947721668, guid: 66ac97fbf3565e346a3717d82a086689, type: 3}
+      propertyPath: BulletSplittingClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 60371e9b966e9c444979d9c94d7fdd01, type: 3}
+    - target: {fileID: 2808692559947721668, guid: 66ac97fbf3565e346a3717d82a086689, type: 3}
+      propertyPath: shootingClipBigEnemy
+      value: 
+      objectReference: {fileID: 8300000, guid: 95b6182b6ce9dc4469ccda3adbfbbff4, type: 3}
+    - target: {fileID: 2808692559947721668, guid: 66ac97fbf3565e346a3717d82a086689, type: 3}
+      propertyPath: BulletSplittingVolume
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 2938259278075060650, guid: 66ac97fbf3565e346a3717d82a086689, type: 3}
       propertyPath: m_Name
       value: AudioPlayer
@@ -2378,7 +2420,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6952276310764352112, guid: a4229feec01c12e4b851bb9cb6e191ab, type: 3}
       propertyPath: paddingTop
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6952276310764352112, guid: a4229feec01c12e4b851bb9cb6e191ab, type: 3}
       propertyPath: paddingBottom

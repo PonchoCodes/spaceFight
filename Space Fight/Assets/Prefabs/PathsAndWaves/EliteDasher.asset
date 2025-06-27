@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a42243dda27faa42ade4f8bf8128606, type: 3}
+  m_Name: EliteDasher
+  m_EditorClassIdentifier: 
+  enemyPrefabs:
+  - {fileID: 7390963446440712281, guid: cb0e81a2ea9c29742b7ec817258f7d73, type: 3}
+  - {fileID: 7390963446440712281, guid: cb0e81a2ea9c29742b7ec817258f7d73, type: 3}
+  - {fileID: 7390963446440712281, guid: cb0e81a2ea9c29742b7ec817258f7d73, type: 3}
+  - {fileID: 7390963446440712281, guid: cb0e81a2ea9c29742b7ec817258f7d73, type: 3}
+  - {fileID: 7390963446440712281, guid: cb0e81a2ea9c29742b7ec817258f7d73, type: 3}
+  - {fileID: 7390963446440712281, guid: cb0e81a2ea9c29742b7ec817258f7d73, type: 3}
+  - {fileID: 7390963446440712281, guid: cb0e81a2ea9c29742b7ec817258f7d73, type: 3}
+  pathPrefab: {fileID: 2477075297005257793, guid: 46663c07e7d98a640b2b9281b9576915, type: 3}
+  moveSpeed: 18
+  timeBetweenEnemySpawns: 0.5
+  spawnTimeVariance: 0.1
+  minimumSpawnTime: 0.2

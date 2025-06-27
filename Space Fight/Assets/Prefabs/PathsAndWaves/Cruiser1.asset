@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a42243dda27faa42ade4f8bf8128606, type: 3}
-  m_Name: Wave 9
+  m_Name: Cruiser1
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 1180159084234125233, guid: 62549be20976d3444bfd479b31002ff7, type: 3}
@@ -23,7 +23,7 @@ MonoBehaviour:
   - {fileID: 1180159084234125233, guid: 62549be20976d3444bfd479b31002ff7, type: 3}
   - {fileID: 1180159084234125233, guid: 62549be20976d3444bfd479b31002ff7, type: 3}
   pathPrefab: {fileID: 3199839391356766981, guid: 5ce6fa4d9b3c1c24cbee3a0565b9c819, type: 3}
-  moveSpeed: 16
+  moveSpeed: 13
   timeBetweenEnemySpawns: 1
   spawnTimeVariance: 0.2
   minimumSpawnTime: 0.2

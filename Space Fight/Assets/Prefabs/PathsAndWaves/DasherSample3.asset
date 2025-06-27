@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a42243dda27faa42ade4f8bf8128606, type: 3}
-  m_Name: Wave 5
+  m_Name: DasherSample3
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 6091566308674183765, guid: 361808ff6b21b10408181cad310dd39f, type: 3}
   - {fileID: 6091566308674183765, guid: 361808ff6b21b10408181cad310dd39f, type: 3}
-  - {fileID: 1180159084234125233, guid: 62549be20976d3444bfd479b31002ff7, type: 3}
   - {fileID: 6091566308674183765, guid: 361808ff6b21b10408181cad310dd39f, type: 3}
   pathPrefab: {fileID: 5677624834940720502, guid: 0f9f4c5115811314a914b9a3cd0679e5, type: 3}
   moveSpeed: 16

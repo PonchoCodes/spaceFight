@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a42243dda27faa42ade4f8bf8128606, type: 3}
-  m_Name: Wave 3
+  m_Name: Sentry2
   m_EditorClassIdentifier: 
   enemyPrefabs:
-  - {fileID: 6091566308674183765, guid: 361808ff6b21b10408181cad310dd39f, type: 3}
-  pathPrefab: {fileID: 4240250780137918960, guid: 741b6f7efe2883d4cac6f77c146ecf7e, type: 3}
-  moveSpeed: 16
-  timeBetweenEnemySpawns: 1.2
-  spawnTimeVariance: 0.2
+  - {fileID: 434149102406811145, guid: 41ec6381dd0cd274eb50e4ef30b8275d, type: 3}
+  pathPrefab: {fileID: 2194846067496066080, guid: 91845a65ee73991438d5469d40cb0938, type: 3}
+  moveSpeed: 5
+  timeBetweenEnemySpawns: 5
+  spawnTimeVariance: 0.5
   minimumSpawnTime: 0.2
