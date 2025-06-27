@@ -238,3 +238,4 @@ MonoBehaviour:
   health: 40
   applyCameraShakeOnDamageTaken: 1
   hitEffect: {fileID: 8351817552490558154, guid: 9ef11a17aee565c45b1b49a0d5c4a853, type: 3}
+  PointsToBeAddedOnDeath: 0
