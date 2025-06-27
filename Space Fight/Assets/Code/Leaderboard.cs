@@ -5,6 +5,7 @@ using Dan.Main;
 using Unity.VisualScripting;
 public class Leaderboard : MonoBehaviour
 {
+    [Header("Leaderboard")]
     [SerializeField] List<TextMeshProUGUI> names;
     [SerializeField] List<TextMeshProUGUI> scores;
     string publicLeaderboardKey = "45e91f9b29be1fe9ee94970813ecf55d95a8d2bd8bd729e074de0a4c197cf2e9";
@@ -28,4 +29,5 @@ public class Leaderboard : MonoBehaviour
             getLeaderboard();
         }));
     }
+
 }
