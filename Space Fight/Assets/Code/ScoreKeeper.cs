@@ -8,7 +8,7 @@ public class ScoreKeeper : MonoBehaviour
 {
 
     static ScoreKeeper instance;
-    private int score = 0;
+    [SerializeField] int score = 0;
     //References
     UIDisplay uIDisplay;
 
@@ -20,7 +20,7 @@ public class ScoreKeeper : MonoBehaviour
 
     private void Start()
     {
-        uIDisplay.UpdateScore(score);
+        uIDisplay.UpdateScore();
     }
 
     private void ManageSingleton()
@@ -37,14 +37,20 @@ public class ScoreKeeper : MonoBehaviour
         }
     }
 
+    public void OnSceneReload()
+    {
+        uIDisplay = FindFirstObjectByType<UIDisplay>();
+        uIDisplay.UpdateScore();
+    }
+
     public void ModifyScore(int points)
     {
         score += points;
         Mathf.Clamp(score, 0, float.MaxValue);
-        uIDisplay.UpdateScore(score);
+        uIDisplay.UpdateScore();
     }
 
-    public void resetScore()
+    public void ResetScore()
     {
         score = 0;
     }

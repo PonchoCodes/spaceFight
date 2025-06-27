@@ -8,13 +8,19 @@ public class UIDisplay : MonoBehaviour
     [SerializeField] Slider healthSlider;
     [SerializeField] TMP_Text scoreText;
 
-    void Awake()
+    //References
+    [SerializeField] ScoreKeeper scoreKeeper;
+
+    void Start()
     {
+        scoreKeeper = FindFirstObjectByType<ScoreKeeper>();
         healthSlider = gameObject.GetComponentInChildren<Slider>();
         scoreText = gameObject.GetComponentInChildren<TMP_Text>();
+        scoreKeeper.OnSceneReload();
     }
 
-    public void UpdateHealthSlider(int currentHealth)
+
+  public void UpdateHealthSlider(int currentHealth)
     {
         if (healthSlider != null)
         {
@@ -22,12 +28,9 @@ public class UIDisplay : MonoBehaviour
             healthSlider.value = sliderHealth;
         }
     }
-    
-    public void UpdateScore(int currentScore)
+
+    public void UpdateScore()
     {
-        if (scoreText != null)
-        {
-            scoreText.text = currentScore.ToString();
-        }
+        scoreText.text = scoreKeeper.getScore().ToString();
     }
 }

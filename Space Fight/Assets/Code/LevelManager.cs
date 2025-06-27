@@ -19,10 +19,12 @@ public class LevelManager : MonoBehaviour
 
     public void LoadGame()
     {
+        scoreKeeper = FindAnyObjectByType<ScoreKeeper>();
         //Loads Game Scene
         SceneManager.LoadScene(1);
         Time.timeScale = 1;
-        scoreKeeper.resetScore();
+        if (scoreKeeper != null) { scoreKeeper.ResetScore(); }
+        
     }
 
     public void LoadLeaderboard()
