@@ -14,7 +14,8 @@ public class Leaderboard : MonoBehaviour
     {
         LeaderboardCreator.GetLeaderboard(publicLeaderboardKey, ((msg) =>
         {
-            for (int i = 0; i < names.Count; i++)
+            int loopLength = (msg.Length < names.Count) ? msg.Length : names.Count;
+            for (int i = 0; i < loopLength; i++)
             {
                 names[i].text = msg[i].Username;
                 scores[i].text = msg[i].Score.ToString();
@@ -24,10 +25,15 @@ public class Leaderboard : MonoBehaviour
 
     public void SetLBEntry(string username, int score)
     {
+        // To add if lb entries still don't allow for more than one after release: LeaderboardCreator.ResetPlayer()
         LeaderboardCreator.UploadNewEntry(publicLeaderboardKey, username, score, ((msg) =>
         {
             getLeaderboard();
         }));
     }
 
+    private void Start()
+    {
+        getLeaderboard();   
+    }
 }

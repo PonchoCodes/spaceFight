@@ -37,7 +37,7 @@ public class AudioPlayer : MonoBehaviour
     {
         if (shootingClipEnemy != null)
         {
-            audioSource.PlayOneShot(shootingClipEnemy, shootingVolumePlayer);
+            audioSource.PlayOneShot(shootingClipEnemy, shootingVolumeEnemy);
             //Vary audio pitch  
             if (varyPitch) { audioSource.pitch = Random.Range(1 - pitchVariance, 1 + pitchVariance); }
         }
