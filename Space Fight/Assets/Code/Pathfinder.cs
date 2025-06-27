@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Pathfinder : MonoBehaviour
 {
+    [SerializeField] bool loopRoute;
     //Reference to the Wave Config SO
     EnemySpawner enemySpawner;
     WaveConfigSO waveConfig;

@@ -12,7 +12,13 @@ public class DamageDealer : MonoBehaviour
     [SerializeField] float shatterBulletSpeed;
     [SerializeField] int amountOfDesiredBullets;
     [SerializeField] int timeBeforeShatter;
+    AudioPlayer audioPlayer;
     [SerializeField] GameObject shatterBulletPrefab;
+
+    private void Awake()
+    {
+    audioPlayer = FindFirstObjectByType<AudioPlayer>();    
+    }
 
     public void Hit()
     {
@@ -44,6 +50,7 @@ public class DamageDealer : MonoBehaviour
             }
             bulletsSpawned += 1;
         }
+        audioPlayer.PlayBulletSplitting();
         Destroy(gameObject);
     }
 
